@@ -51,6 +51,7 @@ def dados():
                 "Limoneno",
                 "Linalol",
             ],
+            "ingrediente_ruim": True,
         },
         "1234567890123": {
             "nome": "Creme Hidratante Facial com Retinol 50g",
@@ -74,6 +75,7 @@ def dados():
                 "Fragrância",
                 "Limoneno",
             ],
+            "ingrediente_ruim": True,
         },
         "9876543210987": {
             "nome": "Loção Corporal Hidratante Sem Retinol 200ml",
@@ -97,6 +99,7 @@ def dados():
                 "Linalol",
                 "Citronelol",
             ],
+            "ingrediente_ruim": False,
         },
     }
 
