@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from api import db
+
+
 
 app = FastAPI()
 
@@ -12,19 +15,12 @@ app.add_middleware(
     allow_headers=["*"],  # Permitir todos os cabeçalhos
 )
 
-# app = FastAPI()
-
-vendas = {
-    1: {"item": "lata", "preco_unitario": 4, "quantidade": 5},
-    2: {"item": "garrafa 2L", "preco_unitario": 15, "quantidade": 5},
-    3: {"item": "garrafa 750ml", "preco_unitario": 10, "quantidade": 5},
-    4: {"item": "lata mini", "preco_unitario": 2, "quantidade": 5},
-}
+produtos = db.dados()
 
 @app.get("/")
 async def home():
-    return {"Vendas": len(vendas)}
+    return {"Produtos cadastrados": len(produtos)}
 
-@app.get("/vendas/{id_venda}")
-async def pegar_venda(id_venda:int):
-    return vendas[id_venda]
+@app.get("/vendas/{barcode_num}")
+async def pegar_venda(barcode_num:str):
+    return produtos[barcode_num]
