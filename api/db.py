@@ -101,6 +101,30 @@ def dados():
             ],
             "ingrediente_ruim": False,
         },
+        "051111407592": {
+            "nome": "Loção Corporal Hidratante Sem Retinol 200ml",
+            "ingredientes": [
+                "Água",
+                "Glicerina",
+                "Óleo de Amêndoas Doces",
+                "Triglicerídeo Caprílico/Cáprico",
+                "Manteiga De Butyrospermum Parkii",
+                "Cera de Abelha",
+                "Dimeticona",
+                "Crospolímero De Acrilatos",
+                "Caprililglicol",
+                "Tocoferol",
+                "Polissorbato 60",
+                "Isoestearato De Sorbitana",
+                "Extrato De Aloe Vera",
+                "Fenoxietanol",
+                "Lecitina",
+                "Fragrância",
+                "Linalol",
+                "Citronelol",
+            ],
+            "ingrediente_ruim": False,
+        },
     }
 
     return produtos
